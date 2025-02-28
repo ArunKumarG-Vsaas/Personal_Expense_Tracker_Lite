@@ -9,4 +9,13 @@
     <h1>Hello World!!!</h1>
     <h2>Hellolo Worldddd</h2>
 </body>
+
+<script>
+    async function main() {
+        let data = await fetch('https://dogapi.dog/api/v2/breeds');
+        let json = await data.json();
+        console.log(json);
+    }
+    main()
+</script>
 </html>
