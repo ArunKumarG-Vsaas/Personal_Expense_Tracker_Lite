@@ -1,0 +1,40 @@
+<style>
+
+    .loader-background {
+        height: 100%;
+        background-color: rgba(220, 212, 212, 0.281);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .loader {
+        width: 48px;
+        height: 48px;
+        border: 5px solid rgb(54, 114, 183);
+        border-radius: 50%;
+        border-bottom-color: transparent;
+        /* Over riding default inline display of span to accomodate the width and height we gave. */
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div class="loader-background">
+        <span class="loader"></span>
+    </div>
+</body>
